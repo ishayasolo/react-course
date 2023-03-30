@@ -3,21 +3,7 @@ import React from "react";
 function Counter() {
 	const [counter, setCounter] = React.useState(0)
 
-	function increment() {
-		setCounter(counter + 1)
-	}
-
-	function decrement() {
-		setCounter(counter - 1)
-	}
-
-	function incrementBy5() {
-		setCounter(counter + 5)
-	}
-
-	function decrementBy5() {
-		setCounter(counter - 5)
-	}
+  const  evaluateCount = (expression) => setCounter(expression)
 
   return (
     <div
@@ -46,8 +32,8 @@ function Counter() {
 					alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={decrement}>- 1</button>
-          <button onClick={increment}>+ 1</button>
+          <button onClick={() => evaluateCount(counter - 1)}>- 1</button>
+          <button onClick={() => evaluateCount(counter + 1)}>+ 1</button>
         </div>
         <div style={{
 					display: 'flex',
@@ -55,8 +41,8 @@ function Counter() {
 					alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={decrementBy5}>- 5</button>
-          <button onClick={incrementBy5}>+ 5</button>
+          <button onClick={() => evaluateCount(counter - 5)}>- 5</button>
+          <button onClick={() => evaluateCount(counter + 5)}>+ 5</button>
         </div>
         <div style={{
 					display: 'flex',
@@ -64,8 +50,8 @@ function Counter() {
 					alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={() => {}}>- 15</button>
-          <button onClick={() => {}}>+ 15</button>
+          <button onClick={() => evaluateCount(counter - 15)}>- 15</button>
+          <button onClick={() => evaluateCount(counter + 15)}>+ 15</button>
         </div>
         <div style={{
 					display: 'flex',
@@ -73,8 +59,8 @@ function Counter() {
 					alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={() => {}}>* 10</button>
-          <button onClick={() => {}}>/ 10</button>
+          <button onClick={() => evaluateCount(counter * 10)}>* 10</button>
+          <button onClick={() => evaluateCount(counter / 10)}>/ 10</button>
         </div>
         <div style={{
 					display: 'flex',
@@ -82,8 +68,12 @@ function Counter() {
 					alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <button onClick={() => {}}>(- 10) / 2</button>
-          <button onClick={() => {}}>(+ 10) * 2</button>
+          <button onClick={() => evaluateCount((counter - 10) / 2)}>
+            (- 10) / 2
+          </button>
+          <button onClick={() => evaluateCount((counter + 10) * 2)}>
+            (+ 10) * 2
+          </button>
         </div>
       </div>
     </div>
