@@ -11,3 +11,25 @@ console.log(firstName)
 
 // console.log(firstName)
 // console.log(otherNames)
+
+
+const person = {
+	name: 'Ishaya',
+	course: 'React',
+	location: {
+		street: 'Ikorodu Road',
+		state: 'lagos'
+	}
+}
+
+const {
+	name,
+	course,
+	location: {
+		state
+	}
+} = person
+
+console.log(name)
+console.log(course)
+console.log(state)

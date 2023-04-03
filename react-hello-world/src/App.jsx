@@ -1,9 +1,9 @@
-import Forms from "./components/Forms"
+import Conditional from "./components/Conditional"
 
 function App() {
   return (
     <div>
-      <Forms />
+      <Conditional />
     </div>
   )
 }
