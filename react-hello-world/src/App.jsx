@@ -1,9 +1,9 @@
-import Conditional from "./components/Conditional"
+import DataHandler from "./components/DataHandler"
 
 function App() {
   return (
     <div>
-      <Conditional />
+      <DataHandler />
     </div>
   )
 }

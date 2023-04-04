@@ -70,3 +70,66 @@ if (hasMoney) {
 // ternary
 console.log(hasMoney ? "i dey go club" : "stay at home")
 console.log(hasMoney ? "chop life!!!" : "drink garri!!!")
+
+// RECAP - switch...case
+let score = 150;
+
+// GRADES (A, B, C, D, E, F)
+// A = 70 and above
+// B = 60 - 69
+// C = 50 - 59
+// D = 45 - 49
+// E = 40 - 44
+// F = 39 and below
+
+if (score >= 70 && score <= 100) {
+	console.log("You have an A")
+} else if (score >= 60 && score <= 69) {
+	console.log("You have a B")
+} else if (score >= 50 && score <= 59) {
+	console.log("You have a C")
+} else if (score >= 45 && score <= 49) {
+	console.log("You have a D")
+} else if (score >= 40 && score <= 44) {
+	console.log("You have a E")
+} else if (score <= 39) {
+	console.log("You have an F")
+} else {
+	console.log("You no sabi book")
+}
+
+
+dayOfTheWeek = "Tuesday"
+
+switch (dayOfTheWeek) {
+	case "Monday":
+		console.log("Mondayyyyyy!");
+		break;
+		
+	case "Tuesday":
+		console.log("Tuesdayyyyyy!");
+		break;
+		
+	case "Wednesday":
+		console.log("Wednesdayyyyyy!");
+		break;
+		
+	case "Thursday":
+		console.log("Thursdayyyyyy!");
+		break;
+		
+	case "Friday":
+		console.log("Yayyyyyy!");
+		break;
+		
+	case "Saturday":
+		console.log("Saturdayyyyyy!");
+		break;
+		
+	case "Sunday":
+		console.log("Sundayyyyyy!");
+		break;
+
+	default:
+		console.log("invalid day of the week")
+}
