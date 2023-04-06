@@ -1,9 +1,9 @@
-import DataHandler from "./components/DataHandler"
+import APIQuotes from "./components/APIQuotes"
 
 function App() {
   return (
     <div>
-      <DataHandler />
+      <APIQuotes />
     </div>
   )
 }
